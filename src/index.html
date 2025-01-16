@@ -9,17 +9,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="images/ebac_logo.svg" alt="EBAC Logo">
             <p class="hero__text">
-                O maior evento  de tecnologia do Brasil começa em 10d 12h 20m 15s
+                O maior evento  de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua Augusto de Vasconcelos,544
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 130,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/02/2025 às 15:00
+                    </li>
+                </ul>
+                <a class="button button--primary" href="">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas molestiae inventore quis placeat labore fuga aliquid similique nulla vitae enim aliquam, a saepe iure culpa, impedit quia? Assumenda, quibusdam.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UX/       UI</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas molestiae inventore quis placeat labore fuga aliquid similique nulla vitae enim aliquam, a saepe iure culpa, impedit quia? Assumenda, quibusdam.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--datascience">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data science</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas molestiae inventore quis placeat labore fuga aliquid similique nulla vitae enim aliquam, a saepe iure culpa, impedit quia? Assumenda, quibusdam.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas molestiae inventore quis placeat labore fuga aliquid similique nulla vitae enim aliquam, a saepe iure culpa, impedit quia? Assumenda, quibusdam.
+                </p>
+            </div>
+            <img class="event__image" src="images/frontend.png" alt="Front-end">
+        </div>
+    </section>
+
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
